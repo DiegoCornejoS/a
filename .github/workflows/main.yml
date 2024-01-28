@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
       # This step references the directory that contains the action.
       - name: Use local action.yml metadata
-        uses: ./actions/action.yml
+        uses: .github/actions/action.yml
       - uses: shalior/wordpress-phpcs-action@master
         with:
           github_token: ${{ secrets.github_token }}
