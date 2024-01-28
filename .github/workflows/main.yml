@@ -4,10 +4,10 @@ jobs:
   linter_name:
     name: runner / phpcs
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
         with:
           node_version:'20.x'
+    steps:
+      - uses: actions/checkout@v2
       - uses: shalior/wordpress-phpcs-action@master
         with:
           node_version:'20.x'
