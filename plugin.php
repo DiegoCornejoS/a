@@ -1,15 +1,5 @@
 <?php
 
-/**
- * Plugin Name: CourseFactory LearnDash Integration
- * Description: A integration CourseFactory Course creator.
- * Author: Reevolutiva
- * Author URI: https://reevolutiva.cl
- * License: GPLv2
- * Version: 0.0.1
- * Text Domain: coursefactory_integration
- */
-
 
 add_action( 'admin_menu', 'course_factory_integration_init_menu' );
 
