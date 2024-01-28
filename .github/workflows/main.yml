@@ -1,11 +1,7 @@
 name: WPCS checker
 on: 
   push:
-    
         inputs:
-            github_token:
-                description: 'GITHUB_TOKEN'
-                default: '${{ github.token }}'
             workdir:
                 description: 'Working directory relative to the root directory.'
                 default: '.'
