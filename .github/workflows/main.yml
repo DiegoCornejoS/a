@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/action.yml
       - uses: shalior/wordpress-phpcs-action@master
         with:
           github_token: ${{ secrets.github_token }}
