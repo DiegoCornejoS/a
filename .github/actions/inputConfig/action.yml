@@ -7,7 +7,7 @@ inputs:
     default: '${{ github.token }}'
   workdir:
     description: 'Working directory relative to the root directory.'
-    default: '.'c
+    default: '.'
   ### Flags for phpcs-wordpress ###
   phpcs_args:
     description: 'Additional PHPCS flags'
