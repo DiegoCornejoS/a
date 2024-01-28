@@ -1,5 +1,27 @@
 name: WPCS checker
-on: push
+on: 
+  push:
+    
+        inputs:
+            github_token:
+                description: 'GITHUB_TOKEN'
+                default: '${{ github.token }}'
+            workdir:
+                description: 'Working directory relative to the root directory.'
+                default: '.'
+            ### Flags for phpcs-wordpress ###
+            phpcs_args:
+                description: 'Additional PHPCS flags'
+                default: '.'
+            phpcbf_args:
+                description: 'Additional PHPCBF flags'
+                default: '.'
+            phpcs_standard:
+                description: 'Coding standard for PHPCS to use when checking files'
+                default: 'WordPress'
+            use_default_configuration_file:
+                description: 'Whether to use default configuration file(phpcs.xml) or not'
+                default: 'true'
 jobs:
   linter_name:
     name: runner / phpcs
