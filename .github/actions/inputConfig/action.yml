@@ -21,11 +21,3 @@ inputs:
   use_default_configuration_file:
     description: 'Whether to use default configuration file(phpcs.xml) or not'
     default: 'true'
-
-runs:
-  using: 'composite'
-  steps:
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '${{ inputs.node-version }}'
