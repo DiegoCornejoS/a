@@ -13,7 +13,7 @@ jobs:
           phpcs_args: '--extensions=.php --ignore=*/vendor/*'
           phpcbf_args: '--extensions=.php --ignore=*/vendor/*'
           phpcs_standard: 'WordPress'
-          workdir: '.'
+          workdir: './plugin.php'
       - uses: stefanzweifel/git-auto-commit-action@v4 # auto commit the fixes action for GitHub
         with:
           commit_message: Fix PHPCS errors
