@@ -7,14 +7,14 @@ inputs:
     default: '${{ github.token }}'
   workdir:
     description: 'Working directory relative to the root directory.'
-    default: '.'
+    default: '.\'
   ### Flags for phpcs-wordpress ###
   phpcs_args:
     description: 'Additional PHPCS flags'
-    default: '.'
+    default: '--extensions=.php --ignore=*/vendor/*'
   phpcbf_args:
     description: 'Additional PHPCBF flags'
-    default: '.'
+    default: '--extensions=.php --ignore=*/vendor/*'
   phpcs_standard:
     description: 'Coding standard for PHPCS to use when checking files'
     default: 'WordPress'
