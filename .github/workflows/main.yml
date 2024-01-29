@@ -10,8 +10,8 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           use_default_configuration_file: true
-          phpcs_args: '--extensions=.php --ignore=*/vendor/*'
-          phpcbf_args: '--extensions=.php --ignore=*/vendor/*'
+          phpcs_args: '--extensions=.php --ignore=*/vendor/* .'
+          phpcbf_args: '--extensions=.php --ignore=*/vendor/* .'
           phpcs_standard: 'WordPress'
           workdir: .
       - uses: stefanzweifel/git-auto-commit-action@v4 # auto commit the fixes action for GitHub
